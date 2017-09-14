@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:text="Descripción"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/titulo"
+        android:layout_toRightOf="@+id/icono"
+        android:layout_toEndOf="@id/icono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@id/titulo"
+        android:text="Título"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/icono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@id/icono"
+        android:layout_marginLeft="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/facebook" />
+</RelativeLayout>
