@@ -8,16 +8,19 @@ public class Categoria {
     private int id;
     private String titulo;
     private String descripcion;
+    private double interes;
+    private Boolean elegido;
 
     public Categoria() {
         super();
     }
 
-    public Categoria(int id, String titulo, String descripcion) {
+    public Categoria(int id, String titulo, String descripcion, double interes) {
         super();
         this.id = id;
         this.titulo = titulo;
         this.descripcion = descripcion;
+        this.interes = interes;
     }
 
     public int getId() {
@@ -42,5 +45,21 @@ public class Categoria {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public double getInteres() {
+        return interes;
+    }
+
+    public void setInteres(double interes) {
+        this.interes = interes;
+    }
+
+    public Boolean getElegido() {
+        return elegido;
+    }
+
+    public void setElegido(Boolean elegido) {
+        this.elegido = elegido;
     }
 }

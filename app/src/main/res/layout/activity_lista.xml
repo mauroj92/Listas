@@ -6,32 +6,53 @@
     android:layout_height="match_parent"
     android:padding="10dp" >
 
+    <ImageView
+        android:layout_toRightOf="@+id/radio"
+        android:id="@+id/icono"
+        android:layout_marginLeft="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/facebook" />
+
     <TextView
+        android:paddingBottom="2dp"
+        android:id="@+id/titulo"
+        android:text="Título"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/icono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingBottom="4dp"
         android:id="@+id/descripcion"
         android:text="Descripción"
         android:textSize="16dp"
         android:textColor="#000"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@+id/titulo"
-        android:layout_toRightOf="@+id/icono"
-        android:layout_toEndOf="@id/icono"
-        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/titulo"
+        android:layout_toRightOf="@id/titulo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@id/titulo"
-        android:text="Título"
-        android:textSize="22dp"
-        android:textColor="#000"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/icono"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
-    <ImageView
-        android:id="@id/icono"
-        android:layout_marginLeft="20dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/facebook" />
+    <RadioButton
+        android:id="@id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"/>
+
+
+    <RatingBar
+        android:id="@+id/interes"
+        android:layout_marginTop="-3dp"
+        android:layout_alignStart="@id/titulo"
+        android:layout_below="@id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
 </RelativeLayout>
